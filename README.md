@@ -72,6 +72,10 @@ python src/main.py
 - Excel file with:
   - Multiple sheets (by modality)
   - Summary report
+ 
+<img width="577" height="1007" alt="image" src="https://github.com/user-attachments/assets/64fd8638-8eed-4234-85fc-b53f031eca64" /><img width="432" height="386" alt="image" src="https://github.com/user-attachments/assets/5e05f199-47c3-4beb-94f3-29f04e46d53d" />
+
+
 
 ---
 
