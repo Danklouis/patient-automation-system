@@ -1,3 +1,5 @@
+This project demonstrates automation of real-world healthcare workflows using Python.
+
 # 🏥 Patient Automation System
 
 A Python-based automation tool that processes patient data and generates structured Excel reports with modality-based categorization.
