@@ -1,0 +1,63 @@
+Juan Luna,65,CT Scan Brain Plain
+Maria Santos,19,X-ray Knee Left
+Pedro Cruz,86,MRI of Right Forearm with Contrast
+Ana Reyes,25,Ultrasound of the Whole Abdomen
+Carlos Dela Cruz,45,X-Ray Chest PA
+Liza Fernandez,17,CT Scan Sinuses
+Mark Bautista,60,MRI Brain with Contrast
+Jenny Lopez,30,Ultrasound Pelvis
+Ramon Garcia,72,CT Scan Abdomen
+Paula Villanueva,15,X-Ray Left Arm
+Jose Ramirez,80,MRI Spine
+Angela Torres,22,Ultrasound Thyroid
+Victor Mendoza,66,CT Scan Chest
+Sofia Castillo,12,X-Ray Skull
+Daniel Navarro,55,MRI Knee
+Grace Aquino,18,Ultrasound Breast
+Luis Herrera,90,CT Scan Whole Body
+Ella Gomez,28,X-Ray Right Foot
+Miguel Santos,63,MRI Shoulder
+Patricia Cruz,40,Ultrasound Liver
+Antonio Reyes,70,CT Scan Pelvis
+Bea Fernandez,14,X-Ray Right Hand
+Chris Bautista,35,MRI Brain Plain
+Nina Lopez,21,Ultrasound Kidney
+Oscar Garcia,68,CT Scan Chest with Contrast
+Karla Villanueva,16,X-Ray Spine
+Adrian Ramirez,75,MRI Abdomen
+Diane Torres,29,Ultrasound Gallbladder
+Ronald Mendoza,50,CT Scan Head
+Cathy Castillo,13,X-Ray Chest AP
+Joshua Navarro,61,MRI Brain with Contrast
+Ella Aquino,27,Ultrasound Pelvis
+Marco Herrera,85,CT Scan Abdomen with Contrast
+Irene Gomez,33,X-Ray Left Leg
+Patrick Santos,64,MRI Spine
+Clara Cruz,20,Ultrasound Thyroid
+Dennis Reyes,78,CT Scan Chest
+Bianca Fernandez,11,X-Ray Right Foot
+Kevin Bautista,59,MRI Knee
+Trisha Lopez,24,Ultrasound Liver
+Arnold Garcia,67,CT Scan Brain
+Mika Villanueva,18,X-Ray Arm
+Leo Ramirez,82,MRI Shoulder
+Angela Torres,31,Ultrasound Kidney
+Victor Mendoza,69,CT Scan Pelvis
+Sofia Castillo,10,X-Ray Skull
+Daniel Navarro,58,MRI Brain
+Grace Aquino,19,Ultrasound Breast
+Luis Herrera,92,CT Scan Whole Body
+Ella Gomez,26,X-Ray Foot
+Miguel Santos,62,MRI Shoulder
+Patricia Cruz,41,Ultrasound Liver
+Antonio Reyes,73,CT Scan Pelvis
+Bea Fernandez,13,X-Ray Hand
+Chris Bautista,36,MRI Brain Plain
+Nina Lopez,23,Ultrasound Kidney
+Oscar Garcia,66,CT Scan Chest with Contrast
+Karla Villanueva,15,X-Ray Spine
+Adrian Ramirez,77,MRI Abdomen
+Diane Torres,28,Ultrasound Gallbladder
+Ronald Mendoza,52,CT Scan Head
+Cathy Castillo,12,X-Ray Chest AP
+Joshua Navarro,60,MRI Brain with Contrast
