@@ -2,6 +2,11 @@
 
 A Python-based automation tool that processes patient data and generates structured Excel reports with modality-based categorization.
 
+## 🧠 Problem Solved
+
+Manual patient data encoding and report generation is time-consuming and error-prone.  
+This system automates classification, categorization, and reporting of patient imaging data.
+
 ---
 
 ## 🚀 Features
@@ -62,7 +67,7 @@ pip install -r requirements.txt
 4. Run the script:
 
 ```bash
-python src/main.py
+python src/main.py --input data/patients.txt
 ```
 
 ---
@@ -76,9 +81,7 @@ python src/main.py
 <img width="577" height="1007" alt="image" src="https://github.com/user-attachments/assets/64fd8638-8eed-4234-85fc-b53f031eca64" /><img width="432" height="386" alt="image" src="https://github.com/user-attachments/assets/5e05f199-47c3-4beb-94f3-29f04e46d53d" />
 
 
-
----
-
 ## 👨‍💻 Author
 
 Danklouis
+>>>>>>> f06b07e (Add CLI support, logging system, and improved project structure)

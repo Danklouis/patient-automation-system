@@ -1,11 +1,38 @@
 import pandas as pd
+import argparse
+import logging
 
-# 🔹 File paths (clean and reusable)
-INPUT_FILE = "data/patients.txt"
-OUTPUT_FILE = "output/patients_output.xlsx"
+
+def get_args():
+    parser = argparse.ArgumentParser(description="Patient Automation System")
+    parser.add_argument(
+        "--input",
+        type=str,
+        default="data/patients.txt",
+        help="Path to input file"
+    )
+    parser.add_argument(
+        "--output",
+        type=str,
+        default="output/patients_output.xlsx",
+        help="Path to output Excel file"
+    )
+    return parser.parse_args()
 
 
 def main():
+    # 🔹 Get CLI arguments
+    args = get_args()
+    INPUT_FILE = args.input
+    OUTPUT_FILE = args.output
+
+    # 🔹 Setup logging
+    logging.basicConfig(
+        filename="output/process.log",
+        level=logging.WARNING,
+        format="%(asctime)s - %(levelname)s - %(message)s"
+    )
+
     records = []
 
     # 🔹 Read file
@@ -22,7 +49,7 @@ def main():
             name, age, procedure = line.strip().split(",")
             age = int(age)
         except ValueError:
-            continue  # skip invalid rows
+            continue
 
         # 🔹 Category logic
         if age <= 18:
@@ -43,12 +70,13 @@ def main():
             modality = "CT Scan"
         elif "ultrasound" in procedure_lower:
             modality = "Ultrasound"
+            
         else:
             modality = "Other"
 
         # 🔹 Log unknown modality
         if modality == "Other":
-            print(f"⚠️ Unknown modality detected: {procedure}")
+            logging.warning(f"Unknown modality detected: {procedure}")
 
         # 🔹 Store record
         records.append({
@@ -59,27 +87,21 @@ def main():
             "Procedure": procedure
         })
 
-    # 🔹 Create DataFrame
     df = pd.DataFrame(records)
 
-    # 🔹 Check if empty
     if df.empty:
         print("⚠️ No valid data found.")
         return
 
-    # 🔹 Sort data
     df = df.sort_values(by=["Modality", "Age"]).reset_index(drop=True)
 
-    # 🔹 Export to Excel
+    # 🔹 Export
     try:
         with pd.ExcelWriter(OUTPUT_FILE) as writer:
-
-            # Write each modality sheet
             for modality, group in df.groupby("Modality"):
                 group = group.sort_values(by="Age")
                 group.to_excel(writer, sheet_name=modality, index=False)
 
-            # Summary sheet
             summary = df["Modality"].value_counts().reset_index()
             summary.columns = ["Modality", "Count"]
             summary.to_excel(writer, sheet_name="Summary", index=False)
@@ -91,6 +113,5 @@ def main():
     print("✅ Data exported with modality grouping")
 
 
-# 🔹 Entry point (important for Python projects)
 if __name__ == "__main__":
     main()
