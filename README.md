@@ -75,14 +75,6 @@ python src/main.py
 
 ---
 
-## 💡 Future Improvements
-
-- PDF data extraction (OCR)
-- AI-based data parsing
-- Web dashboard integration
-
----
-
 ## 👨‍💻 Author
 
 Danklouis
