@@ -49,7 +49,7 @@ patient-automation-system/
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/patient-automation-system.git
+git clone https://github.com/Danklouis/patient-automation-system.git
 cd patient-automation-system
 ```
 
